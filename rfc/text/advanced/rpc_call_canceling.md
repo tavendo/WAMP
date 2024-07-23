@@ -71,7 +71,7 @@ Message flow during call canceling when *Callee* does not support this feature o
            |      ERROR      |                   |
            | <----------------                   |
            |                 |                   |
-           |                 | RESULT (skipped)  |
+           |                 |  YIELD (skipped)  |
            |                 | <---------------- |
            |                 |                   |
            |                 | or ERROR (skipped)|
