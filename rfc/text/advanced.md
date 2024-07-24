@@ -14,13 +14,13 @@
 
 {{advanced/rpc.md}}
 
-{{advanced/rpc_progressive_call_results.md}}
-
-{{advanced/rpc_progressive_call_invocations.md}}
+{{advanced/rpc_call_canceling.md}}
 
 {{advanced/rpc_call_timeout.md}}
 
-{{advanced/rpc_call_canceling.md}}
+{{advanced/rpc_progressive_call_results.md}}
+
+{{advanced/rpc_progressive_call_invocations.md}}
 
 {{advanced/rpc_call_rerouting.md}}
 

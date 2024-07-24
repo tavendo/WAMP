@@ -7,10 +7,10 @@ Support for advanced features must be announced by the peers which implement the
 {align="left"}
 | Feature                                                           | Status | Caller | Dealer | Callee |
 |-------------------------------------------------------------------|--------|--------|--------|--------|
+| [Call Canceling](#rpc-call-canceling)                             | alpha  | X      | X      | X      |
+| [Call Timeout](#rpc-call-timeout)                                 | alpha  | X      | X      | X      |
 | [Progressive Call Results](#rpc-progressive-call-results)         | stable | X      | X      | X      |
 | [Progressive Call Invocations](#rpc-progressive-call-invocations) | alpha  | X      | X      | X      |
-| [Call Timeout](#rpc-call-timeout)                                 | alpha  | X      | X      | X      |
-| [Call Canceling](#rpc-call-canceling)                             | alpha  | X      | X      | X      |
 | [Caller Identification](#rpc-call-identification)                 | stable | X      | X      | X      |
 | [Call Trustlevels](#rpc-call-trust-levels)                        | alpha  |        | X      | X      |
 | [Registration Meta API](#rpc-reg-metapi)                          | beta   |        | X      |        |
