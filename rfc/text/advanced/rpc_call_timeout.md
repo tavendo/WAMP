@@ -29,12 +29,17 @@ If the *Callee* supports Call Timeouts, the *Dealer* MAY propagate the `CALL.Opt
 
 **Feature Announcement**
 
-Support for this feature MUST be announced by *Dealers* (`role := "dealer"`) and MAY be announced by *Callees* (`role := "callee"`) via
+Support for this feature MUST be announced by *Dealers* via
 
 {align="left"}
-        HELLO.Details.roles.<role>.features.call_timeout|bool := true
+        WELCOME.Details.roles.dealer.features.call_timeout|bool := true
+
+and MAY be announced by *Callees* via
+
+{align="left"}
+        HELLO.Details.roles.callee.features.call_timeout|bool := true
 
 If a *Callee* does not support Call Timeouts, it may optionally announce support for Call Cancellation via 
-        
+
 {align="left"}
         HELLO.Details.roles.<role>.features.call_canceling|bool := true
