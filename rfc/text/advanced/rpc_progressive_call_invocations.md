@@ -20,16 +20,16 @@ and *Dealers* (`role := "dealer"`) via
         HELLO.Details.roles.<role>.features.progressive_call_invocations|bool := true
 
 Progressive call invocations can work only if all three peers support and announce this feature.
-In addition, *Callees* MUST announce support of the _Call Cancelling_ feature via
+In addition, *Callees* MUST announce support of the _Call Canceling_ feature via
 
 {align="left"}
-        HELLO.Details.roles.callee.features.call_cancelling|bool := true
+        HELLO.Details.roles.callee.features.call_canceling|bool := true
 
 
-As a consequence, *Dealers* MUST also announce support of the _Call Cancelling_ feature via
+As a consequence, *Dealers* MUST also announce support of the _Call Canceling_ feature via
 
 {align="left"}
-        WELCOME.Details.roles.dealer.features.call_cancelling|bool := true
+        WELCOME.Details.roles.dealer.features.call_canceling|bool := true
 
 The following cases, where a *Caller* sends a `CALL` message with `progress := true`, MUST be treated as *protocol errors*
 with the underlying WAMP sessions being aborted:
@@ -38,7 +38,7 @@ with the underlying WAMP sessions being aborted:
 - The *Dealer* did not announce the progressive call invocations feature during the `HELLO` handshake.
 
 Otherwise, in cases where the *Caller* sends a `CALL` message with `progress := true` but the *Callee* does not support
-progressive call invocations or call cancelling, the call MUST be treated as an *application error* with the *Dealer* responding
+progressive call invocations or call canceling, the call MUST be treated as an *application error* with the *Dealer* responding
 to the *Caller* with the `wamp.error.feature_not_supported` error message.
 
 **Message Flow**

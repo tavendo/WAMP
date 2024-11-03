@@ -465,7 +465,7 @@ If either the *Dealer* or the *Callee* does not support the *Call Canceling* fea
 
 ## Callee Leaving During an RPC Invocation {#rpc-callee-leaving}
 
-After sending an INVOCATION message, if a *Dealer* detects that the *Callee* has left/disconnected without sending a final YIELD or ERROR response, then the *Dealer* SHALL return an ERROR message back to the Caller with a `wamp.error.cancelled` URI. The *Dealer* MAY provide additional information via the ERROR payload arguments to clarify that the cancellation is due to the *Callee* leaving before the call could be completed.
+After sending an INVOCATION message, if a *Dealer* detects that the *Callee* has left/disconnected without sending a final YIELD or ERROR response, then the *Dealer* SHALL return an ERROR message back to the Caller with a `wamp.error.canceled` URI. The *Dealer* MAY provide additional information via the ERROR payload arguments to clarify that the cancellation is due to the *Callee* leaving before the call could be completed.
 
 {align="left"}
         ,------.          ,------.          ,------.
